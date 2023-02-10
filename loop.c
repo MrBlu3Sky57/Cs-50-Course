@@ -2,14 +2,15 @@
 
 int main(void)
 {
+    const int f = 3
     int i = 0;
-    while (i < 3) 
+    while (i < f) 
     {
         printf("Something\n");
         i++;
     }
 
-    for (int j = 0; j < 3; j++) 
+    for (int j = 0; j < f; j++) 
     {
         printf("Something\n");
     }
