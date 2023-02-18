@@ -2,14 +2,14 @@
 #include <string.h>
 #include <ctype.h>
 
-int getPoints(char *word);
+int get_points(char *word);
 void compare(int points1, int points2);
 
 int main(void)
 {
     // Get player words
-    char player1Word[50];
-    char player2Word[50];
+    char player1_Word[50];
+    char player2_Word[50];
 
     printf("Player 1: ");
     scanf("%s", player1Word);
@@ -18,15 +18,15 @@ int main(void)
     scanf("%s", player2Word);
 
     // Return number of points for each word
-    int player1Points = getPoints(player1Word);
-    int player2Points = getPoints(player2Word);
+    int player1_Points = get_points(player1_Word);
+    int player2_Points = get_points(player2_Word);
 
     // Compare total points
-    compare(player1Points, player2Points);
+    compare(player1_Points, player2_Points);
 
 }
 
-int getPoints(char *word)
+int get_points(char *word)
 {
     // Array with points
     int points[26] = {1, 3, 3, 2, 1, 4, 2, 4, 1, 8, 5, 1, 3, 1, 1, 3, 10, 1, 1, 1, 1, 4, 4, 8, 4, 10};
